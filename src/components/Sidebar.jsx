@@ -2,36 +2,67 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="w-64 h-screen bg-zinc-900 p-5 fixed">
-
-      <h1 className="text-2xl font-bold mb-10">
-        MineUC Admin
+    <div
+      className="
+      w-20 md:w-64
+      h-screen
+      bg-zinc-900
+      p-3 md:p-5
+      fixed
+    "
+    >
+      <h1
+        className="
+        text-sm md:text-2xl
+        font-bold
+        mb-10
+      "
+      >
+        MineUC
       </h1>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-6">
 
         <Link to="/">
-          Dashboard
+          📊
+          <span className="hidden md:inline ml-2">
+            Dashboard
+          </span>
         </Link>
 
         <Link to="/users">
-          Users
+          👤
+          <span className="hidden md:inline ml-2">
+            Users
+          </span>
         </Link>
 
         <Link to="/claims">
-          Claims
+          🎁
+          <span className="hidden md:inline ml-2">
+            Claims
+          </span>
         </Link>
 
         <Link to="/tasks">
-          Tasks
+          ✅
+          <span className="hidden md:inline ml-2">
+            Tasks
+          </span>
         </Link>
 
         <Link to="/events">
-          Events
+          🏆
+          <span className="hidden md:inline ml-2">
+            Events
+          </span>
         </Link>
 
         <Link to="/broadcast">
-          Broadcast
+          📢
+          <span className="hidden md:inline ml-2">
+            Broadcast
+          </span>
         </Link>
 
       </div>
