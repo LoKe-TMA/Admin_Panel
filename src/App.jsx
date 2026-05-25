@@ -11,40 +11,50 @@ import Tasks from "./pages/Tasks";
 import Events from "./pages/Events";
 import Broadcast from "./pages/Broadcast";
 
+import MainLayout from "./layouts/MainLayout";
+
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={<Dashboard />}
-        />
 
-        <Route
-          path="/users"
-          element={<Users />}
-        />
+      <MainLayout>
 
-        <Route
-          path="/claims"
-          element={<Claims />}
-        />
+        <Routes>
 
-        <Route
-          path="/tasks"
-          element={<Tasks />}
-        />
+          <Route
+            path="/"
+            element={<Dashboard />}
+          />
 
-        <Route
-          path="/events"
-          element={<Events />}
-        />
+          <Route
+            path="/users"
+            element={<Users />}
+          />
 
-        <Route
-          path="/broadcast"
-          element={<Broadcast />}
-        />
-      </Routes>
+          <Route
+            path="/claims"
+            element={<Claims />}
+          />
+
+          <Route
+            path="/tasks"
+            element={<Tasks />}
+          />
+
+          <Route
+            path="/events"
+            element={<Events />}
+          />
+
+          <Route
+            path="/broadcast"
+            element={<Broadcast />}
+          />
+
+        </Routes>
+
+      </MainLayout>
+
     </BrowserRouter>
   );
 }
