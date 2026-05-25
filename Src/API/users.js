@@ -1,6 +1,0 @@
-import API from "./axios";
-
-export const getUsers = async () => {
-  const res = await API.get("/admin/users");
-  return res.data;
-};
